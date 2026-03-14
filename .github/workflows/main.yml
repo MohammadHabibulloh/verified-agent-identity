@@ -28,4 +28,5 @@ jobs:
         run: node scripts/createNewEthereumIdentity.js
 
       - name: Link Human to Agent
-        run: node scripts/manualLinkHumanToAgent.js
+        run: |
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name":"cloud","description":"Cloud AI Agent"}'
